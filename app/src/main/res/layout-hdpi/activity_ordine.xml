@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/labelTavolo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:layout_alignParentTop="true" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/labelNumeroCoperti" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_coperti" android:singleLine="false" android:layout_toLeftOf="@id/modqtacoperto" android:layout_below="@id/labelTavolo" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/modqtacoperto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qta_iniziale" android:layout_below="@id/labelTavolo" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/menucoperti" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/modqtacoperto" android:layout_below="@id/labelTavolo"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="20.0sp" android:textColor="@*android:color/white" android:id="@id/bAggiungiCoperto" android:background="@drawable/button_green_selector" android:layout_width="wrap_content" android:layout_height="33.0dip" android:text="@string/plus" android:layout_toLeftOf="@id/s2" android:layout_alignParentLeft="true" />
+        <TextView android:id="@id/s2" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_centerHorizontal="true" />
+        <Button android:textSize="20.0sp" android:textColor="@*android:color/white" android:id="@id/bRimuoviCoperto" android:background="@drawable/button_red_selector" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="@string/minus" android:layout_toRightOf="@id/s2" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/elmentiordinabili" android:background="@drawable/generic_transparent_bk_selector" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_below="@id/menucoperti" />
+    <ListView android:id="@id/elmentiordinati" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/menuordine" android:layout_below="@id/elmentiordinabili" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/menuordine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="30.0sp" android:textColor="@*android:color/black" android:gravity="center" android:id="@id/bOrdinazioniPrecedenti" android:background="@drawable/button_yellow_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vedi_ordini_precedenti" android:layout_below="@id/bOrdinazioniPrecedenti" />
+        <Button android:textSize="20.0sp" android:textColor="@*android:color/white" android:id="@id/bInviaComanda" android:background="@drawable/button_green_selector" android:layout_width="wrap_content" android:layout_height="53.0dip" android:text="@string/invia_comanda" android:layout_toLeftOf="@id/s1" android:layout_below="@id/bOrdinazioniPrecedenti" android:layout_alignParentLeft="true" />
+        <TextView android:id="@id/s1" android:layout_width="wrap_content" android:layout_height="53.0dip" android:layout_centerHorizontal="true" />
+        <Button android:textSize="20.0sp" android:textColor="@*android:color/white" android:id="@id/bAnnullaComanda" android:background="@drawable/button_red_selector" android:layout_width="fill_parent" android:layout_height="53.0dip" android:text="@string/annulla_comanda" android:layout_toRightOf="@id/bInviaComanda" android:layout_below="@id/bOrdinazioniPrecedenti" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

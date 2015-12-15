@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/hor_sale" android:focusable="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="53.0dip" android:fillViewport="false" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/elencosale" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/salaScelta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/hor_sale" />
+    <ScrollView android:id="@id/scrollViewTavoli" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bPrevTavoli" android:layout_below="@id/salaScelta">
+        <TableLayout android:id="@id/tTavoli" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <Button android:textSize="20.0sp" android:textColor="@*android:color/white" android:id="@id/bPrevTavoli" android:background="@drawable/button_red_selector" android:layout_width="fill_parent" android:layout_height="53.0dip" android:text="@string/annulla_generico" android:layout_alignParentBottom="true" />
+</RelativeLayout>

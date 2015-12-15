@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@*android:color/white" android:id="@id/TextView_Login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Inserisci_login" />
+    <EditText android:id="@id/EditText_Login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+    <TextView android:textStyle="bold" android:textColor="@*android:color/white" android:id="@id/TextView_Pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Inserisci_pwd" />
+    <EditText android:id="@id/EditText_Pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/TextView_PwdProblem" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

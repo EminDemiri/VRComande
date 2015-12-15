@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/sLabelValoreConto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_TotaleConto" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/ValoreConto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/val_iniziale" android:layout_toRightOf="@id/sLabelValoreConto" android:layout_centerHorizontal="true" />
+    <ListView android:id="@id/elencovecchiarticoli" android:background="@drawable/generic_transparent_bk_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/menuarticoli" android:layout_below="@id/ValoreConto" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/menuarticoli" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="20.0sp" android:textColor="@*android:color/black" android:id="@id/bRistampaComanda" android:background="@drawable/button_yellow_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/Ristampa_comanda" android:layout_below="@id/ValoreConto" android:layout_alignParentRight="true" />
+        <Button android:textSize="20.0sp" android:textColor="@*android:color/white" android:id="@id/bChiudiVisualizzazione" android:background="@drawable/button_red_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/close_activity" android:layout_below="@id/bRistampaComanda" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="30.0sp" android:id="@id/bVarianteLibera" android:background="@drawable/button_yellow_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/variante_libera" />
+    <ListView android:id="@id/elencovarianti" android:background="@drawable/generic_transparent_bk_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/menuvarianti" android:layout_below="@id/bVarianteLibera" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/menuvarianti" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="30.0sp" android:textColor="@*android:color/white" android:id="@id/bAccettaVarianti" android:background="@drawable/button_green_selector" android:layout_width="wrap_content" android:layout_height="80.0dip" android:text="@string/accetta_varianti" android:layout_toLeftOf="@id/spaziovariantilabel" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="30.0sp" android:id="@id/spaziovariantilabel" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_centerHorizontal="true" />
+        <Button android:textSize="30.0sp" android:textColor="@*android:color/white" android:id="@id/bAnnullaVarianti" android:background="@drawable/button_red_selector" android:layout_width="wrap_content" android:layout_height="80.0dip" android:text="@string/annulla_varianti" android:layout_toRightOf="@id/spaziovariantilabel" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

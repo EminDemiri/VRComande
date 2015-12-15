@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/selezioneVariante" android:background="#ffffffff" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:checkMark="?android:textCheckMark" android:text=""
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>
